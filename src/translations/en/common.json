@@ -1,0 +1,72 @@
+{
+    "msgTop": {
+        "title": "To start, click on your country's flag:",
+        "option": "Now select an option:",
+        "auto": {
+            "autoB": "Automatic Shipment: Bolivia",
+            "autoE": "Automatic Shipment: Ecuador",
+            "autoCr": "Automatic Shipment: Costa Rica",
+            "autoCo": "Automatic Shipment: Colombia"
+        },
+        "register": {
+            "regB": "Registration: Bolivia",
+            "regE": "Registration: Ecuador",
+            "regCr": "Registration: Costa Rica",
+            "regCo": "Registration: Colombia", 
+            "success": "Thanks for your order!"
+        }
+    },
+    "pack": {
+        "titleAs": "Buy you automatic shipment here:",
+        "titleReg": "Buy you starter package and register:", 
+        "managermsg": "QUALIFY IMMEDIATELY AS MANAGER",
+        "price": "Price: ",
+        "shipCost": "Shipping cost"
+    },
+    "govId": {
+        "cedula": "Government Id",
+        "cedulaNIT": "Government Id/NIT"
+    },
+    "countryOptions": {
+        "optionsTitle": "Click on one of the options:",
+        "optionAs": "I'm already registered and would like to place an automatic shipment order.",
+        "optionReg": "I would like to register and make my first order."
+    },
+    "signUpForm": {
+        "title": "Registration form",
+        "fillInfo": "Pleas fill with your information:",
+        "typeA": "Mr",
+        "typeB": "Mrs",
+        "typeC": "Business",
+        "name": "Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Street/Number",
+        "city": "City",
+        "zipcode": "Zipcode",
+        "country": "Country",
+        "dob": "Date of Birth",
+        "agreeTerms":"I want to register as Team Partner and I accept the terms and conditions of Pm International.",
+        "nameSponsor":"Sponsor Name",
+        "numberSponsor":"Sponsor's TP Number",
+        "agreeReg":"I want to register in the team of this sponsor.",
+        "button": "Submit",
+        "textLink": "Click here to download terms and conditions (PDF)",
+        "linkRef": "https://www.pm-international.com/files/regdownload/pmagbus.pdf", 
+        "pay": "Buy"
+    },
+    "startK": {
+        "includes":"includes",
+        "kit":"(Demo Bag, 2 cups, spoon & Bottle) + 1 Activize Oxyplus"
+    },
+    "automaticShip":{
+        "title":"Automatic Shipment Order", 
+        "confirmAuto":"I confirm I want to activate my automatic shipment.",
+        "teampartnerNumber": "TeamPartner Number"
+    }, 
+    "longMessages": {
+        "successForm" : "Your form was successfully submitted!",
+        "payment": "Now advance to payment by clicking the button below, remember to use the same email you used when signing up when paying."
+    }
+}

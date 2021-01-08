@@ -10,11 +10,11 @@ const Footer = () => {
 
     const conditionalRender = () => {
         if (contact) {
-            return <div className="contactTab">
+            return <div id="contactTab" className="contactTab">
                 <h3>PM-International USA</h3>
-                <p>9245 16th St East
+                <p>7245 16th St East
         Sarasota, FL 34243 / USA</p>
-               <h4> Email: customerservice-op@pm-international.com</h4>
+               <h4> Email: pmi-fpo@pm-international.com</h4>
             </div>
         } else {
             return <div></div>
@@ -41,7 +41,7 @@ const Footer = () => {
                 {/* <a href="#" onClick={setContact}>
 
             </a> */}
-                <a href="#" onClick={toggleContact}>
+                <a href="" onClick={toggleContact}>
                     <p>Contact us</p>
                 </a>
             </div>

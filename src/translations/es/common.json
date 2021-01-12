@@ -58,8 +58,9 @@
         "pay": "Comprar"
     }, 
     "startK": {
-        "includes":"includes",
-        "kit":"(Bolsa, 2 vasos, cuchara y Botella) + 1 Activize Oxyplus"
+        "includes":"incluye",
+        "kit":"(Bolsa, 2 vasos, cuchara y Botella) + 1 Activize Oxyplus", 
+        "ecuadorKit": "( Activize Oxyplus )"
     },
     "automaticShip":{
         "title":"Orden de autoenvio", 

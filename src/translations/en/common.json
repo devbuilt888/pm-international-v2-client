@@ -58,7 +58,8 @@
     },
     "startK": {
         "includes":"includes",
-        "kit":"(Demo Bag, 2 cups, spoon & Bottle) + 1 Activize Oxyplus"
+        "kit":"(Demo Bag, 2 cups, spoon & Bottle) + 1 Activize Oxyplus",
+        "ecuadorKit": "(Activize Oxyplus)"
     },
     "automaticShip":{
         "title":"Automatic Shipment Order", 

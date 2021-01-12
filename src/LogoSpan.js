@@ -24,8 +24,9 @@ const LogoSpan = (props) => {
             <div className="topMessage sixteen wide column">
                 <div className="ui grid">
                     <div className="three wide column marginBtn">
-                        <button className="ui button pmButton">PM-International</button>
-
+                        <a href="">
+                            <button className="ui button pmButton">PM-International</button>
+                        </a>
                     </div>
                     <div className="five wide column marginMsgTop">
                         <h5>{props.messageTop}</h5><i className={props.flag}></i>

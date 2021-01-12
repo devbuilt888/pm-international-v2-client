@@ -6,17 +6,19 @@ const Package = (props) => {
     const [isAutoship, setAutoship] = useState("");
     const [isActive, setIsActive] = useState("false");
     const [packageSelected, setPackageSelected] = useState("smallPack");
+    let [ecuadorKit, setEcuadorKit] = useState(false);
 
     useEffect(() => {
         changePackage();
-        setAutoship(props.isAutoship);
+        // setAutoship(props.isAutoship);
+        setEcuadorKit(props.ecuadorKit);
     });
 
     //Check if the first element is active, 
     const handleToggle = () => {
-        if(!isAutoship){
+        // if(!isAutoship){
             setIsActive(!isActive);
-        }else{return;}
+        // }else{return;}
     };
 
     const changePackage = () => {
@@ -568,11 +570,16 @@ VDA5OjA0OjA5KzAwOjAwUw9zMgAAAABJRU5ErkJggg=="/>
                                 </svg> <div className="quantityTag">{props.quantityTag}</div>         </div>
                             <div className="descriptionProduct">
                                 <h5>{t("pack.price")} {props.price} + 28$ {t("pack.shipCost")}</h5>
-                                <p>{t("pack.managermsg")}</p>
+                                <p>{ecuadorKit ? t("pack.managermsg") : ''}</p>
                             </div>
                         </div>
                     </div>
-                    <div className={isAutoship ?  "disappearSubmit" : "nine wide column productBox"} id="largePck">
+
+                    {/* TO ENABLE AUTOSHIP DISAPPEAR, IF FOR WHATEVER REASON ONLY ONE PACK HAD TO BE DISPLAYED ON AUTO */}
+                    {/* <div className={isAutoship ?  "disappearSubmit" : "nine wide column productBox"} id="largePck"> */}
+
+
+                    <div className={"nine wide column productBox"} id="largePck">
 
                         <div className=" borderSolid packageBoxShade" onClick={handleToggle}>
                             <i className={isActive ? "circle icon" : "circle icon check checkMark"}></i>

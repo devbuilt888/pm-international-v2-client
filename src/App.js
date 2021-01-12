@@ -97,7 +97,7 @@ const App = () => {
                     <div>
                         {/* messsageTop= Envio Automatico: Bolivia */}
                         <LogoSpan messageTop={t('msgTop.auto.autoB')} flag={'bolivia flag'} />
-                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$651 USD'} quantityTag={'x6'} isAutoship={true} selectPackage={setPack} />
+                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$651 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$124.00USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPack} />
                         <AutoShip inputPayment={boliviaEa} />
                         <Footer />
                     </div>
@@ -106,7 +106,7 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.auto.autoCo')} flag={'co flag'} />
-                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$688 USD'} quantityTag={'x6'} isAutoship={true} selectPackage={setPack} />
+                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$688 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$131.05USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPack} />
                         <AutoShip inputPayment={colombiaEa} />
                         <Footer />
 
@@ -115,7 +115,7 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.auto.autoE')} flag={'ecuador flag'} />
-                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$386 USD'} quantityTag={'x3'} isAutoship={true} selectPackage={setPack} />
+                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$386 USD'} quantityTag={'x3'}  package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.80USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPack} />
                         <AutoShip inputPayment={ecuadorEa} />
                         <Footer />
 
@@ -125,7 +125,7 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.auto.autoCr')} flag={'cr flag'} />
-                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$672 USD'} quantityTag={'x6'} isAutoship={true} selectPackage={setPack} />
+                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$672 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$163.00USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPack} />
                         <AutoShip inputPayment={costaricaEa} />
                         <Footer />
 
@@ -138,7 +138,7 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.register.regB')} flag={'bolivia flag'} />
-                        <StarterKit />
+                        <StarterKit kitEcuador={false}/>
                         <Package packageType={t('pack.titleReg')} packageName={'Quickstart B.A.R. 6x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$700USD'} quantityTag={'x5+1'} package2Name={'TP start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$159.00USD'} quantity2Tag={'x1'} selectPackage={setPack} isAutoship={false} />
                         <SignupForm cedula={t('govId.cedula')} inputPayment={boliviaSign} />
                         <Footer />
@@ -148,7 +148,7 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.register.regCo')} flag={'co flag'} />
-                        <StarterKit />
+                        <StarterKit kitEcuador={false}/>
                         <Package packageType={t('pack.titleReg')} packageName={'Quickstart B.A.R. 6x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$750USD'} quantityTag={'x5+1'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$166.05USD'} quantity2Tag={'x1'} selectPackage={setPack} isAutoship={false} />
                         <SignupForm cedula={t('govId.cedulaNIT')} inputPayment={colombiaSign} />
                         <Footer />
@@ -158,8 +158,8 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.register.regE')} flag={'ecuador flag'} />
-                        <StarterKit />
-                        <Package packageType={t('pack.titleReg')} packageName={'Pedido de prueba B.A.R. 3x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$396USD'} quantityTag={'x3'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$163.80USD'} quantity2Tag={'x1'} selectPackage={setPack} isAutoship={false} />
+                        <StarterKit kitEcuador={true} />
+                        <Package packageType={t('pack.titleReg')} packageName={'Pedido de prueba B.A.R. 3x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$396USD'} quantityTag={'x3'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.80USD'} quantity2Tag={'x1'} selectPackage={setPack} isAutoship={false} />
                         <SignupForm cedula={t('govId.cedula')} inputPayment={ecuadorSign} />
                         <Footer />
                     </div>
@@ -168,7 +168,7 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.register.regCr')} flag={'cr flag'} />
-                        <StarterKit />
+                        <StarterKit kitEcuador={false} />
                         <Package packageType={t('pack.titleReg')} packageName={'Quickstart B.A.R. 6x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$740USD'} quantityTag={'x5+1'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$163.00USD'} quantity2Tag={'x1'} selectPackage={setPack} isAutoship={false} />
                         <SignupForm cedula={t('govId.cedula')} inputPayment={costaricaSign} />
                         <Footer />

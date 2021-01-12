@@ -19,6 +19,8 @@ import {
     Link,
     useParams
 } from "react-router-dom";
+import UseRedirectToHttps from './useRedirectToHttps';
+
 
 
 //make this state into hooks and class into functional component
@@ -32,7 +34,7 @@ const App = () => {
     const { t, i18n } = useTranslation('common');
 
 
-
+    UseRedirectToHttps();
     // this was previously the state for this class comp
     // state = { country: '', package: '', form: '', pack: '', packName: '', price: '' };
 

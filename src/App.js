@@ -19,7 +19,7 @@ import {
     Link,
     useParams
 } from "react-router-dom";
-import useRedirectToHttps from './useRedirectToHttps';
+// import useRedirectToHttps from './useRedirectToHttps';
 
 
 
@@ -65,10 +65,9 @@ const App = () => {
     const colombiaEa = "eb60ca2e-90bc-400f-94d9-a55c9eb5d013";
     const costaricaEa = "b62727b1-7eda-48f9-9260-8180e5da6a29";
 
-    useRedirectToHttps();
-
 
     const renderContent = () => {
+
         if (country === '') {
             return (
                 //  show loader on certain state events

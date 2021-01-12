@@ -125,7 +125,7 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.auto.autoCr')} flag={'cr flag'} />
-                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$672 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$163.00USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPack} />
+                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$672 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.00USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPack} />
                         <AutoShip inputPayment={costaricaEa} />
                         <Footer />
 

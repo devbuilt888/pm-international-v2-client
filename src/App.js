@@ -19,7 +19,7 @@ import {
     Link,
     useParams
 } from "react-router-dom";
-import UseRedirectToHttps from './useRedirectToHttps';
+import useRedirectToHttps from './useRedirectToHttps';
 
 
 
@@ -34,7 +34,6 @@ const App = () => {
     const { t, i18n } = useTranslation('common');
 
 
-    UseRedirectToHttps();
     // this was previously the state for this class comp
     // state = { country: '', package: '', form: '', pack: '', packName: '', price: '' };
 
@@ -66,6 +65,7 @@ const App = () => {
     const colombiaEa = "eb60ca2e-90bc-400f-94d9-a55c9eb5d013";
     const costaricaEa = "b62727b1-7eda-48f9-9260-8180e5da6a29";
 
+    useRedirectToHttps();
 
 
     const renderContent = () => {

@@ -115,7 +115,7 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.auto.autoE')} flag={'ecuador flag'} />
-                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$386 USD'} quantityTag={'x3'}  package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.80USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPack} />
+                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 3x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$386 USD'} quantityTag={'x3'}  package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.80USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPack} />
                         <AutoShip inputPayment={ecuadorEa} />
                         <Footer />
 
@@ -159,7 +159,7 @@ const App = () => {
                     <div>
                         <LogoSpan messageTop={t('msgTop.register.regE')} flag={'ecuador flag'} />
                         <StarterKit kitEcuador={true} />
-                        <Package packageType={t('pack.titleReg')} packageName={'Pedido de prueba B.A.R. 3x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$396USD'} quantityTag={'x3'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.80USD'} quantity2Tag={'x1'} selectPackage={setPack} isAutoship={false} />
+                        <Package packageType={t('pack.titleReg')} packageName={'Pedido de prueba B.A.R. 3x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$396USD'} quantityTag={'x3'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$163.80USD'} quantity2Tag={'x1'} selectPackage={setPack} isAutoship={false} />
                         <SignupForm cedula={t('govId.cedula')} inputPayment={ecuadorSign} />
                         <Footer />
                     </div>

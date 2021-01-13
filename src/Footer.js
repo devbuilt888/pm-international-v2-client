@@ -41,7 +41,7 @@ const Footer = () => {
                 {/* <a href="#" onClick={setContact}>
 
             </a> */}
-                <a href="" onClick={toggleContact}>
+                <a onClick={toggleContact}>
                     <p>Contact us</p>
                 </a>
             </div>

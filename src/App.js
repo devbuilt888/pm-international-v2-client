@@ -55,21 +55,21 @@ const App = () => {
     //     )
     // }
 
-    let boliviaSign = (packName === "managerPack") ?  728 : 124 ;
-    let colombiaSign = (packName === "managerPack") ?  778 : 194.05 ;
-    let costaricaSign = (packName === "managerPack") ?  768 : 191;
-    let ecuadorSign = (packName === "managerPack") ?  424 : 191.80;
+    let boliviaSign = (packName === "managerPack") ? 728 : 124;
+    let colombiaSign = (packName === "managerPack") ? 778 : 194.05;
+    let costaricaSign = (packName === "managerPack") ? 768 : 191;
+    let ecuadorSign = (packName === "managerPack") ? 424 : 191.80;
 
-    let ecuadorEa = (packName === "managerPack") ? 414 : 156.80 ;
+    let ecuadorEa = (packName === "managerPack") ? 414 : 156.80;
     let boliviaEa = (packName === "managerPack") ? 679 : 152;
-    let colombiaEa = (packName === "managerPack") ?  716 : 159.05 ;
-    let costaricaEa = (packName === "managerPack") ? 700 : 156 ;
+    let colombiaEa = (packName === "managerPack") ? 716 : 159.05;
+    let costaricaEa = (packName === "managerPack") ? 700 : 156;
 
 
     const renderContent = () => {
 
         if (country === '') {
-            return (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+            return (
                 //  show loader on certain state events
                 // <Loader />
                 <div>
@@ -99,7 +99,7 @@ const App = () => {
                         {/* messsageTop= Envio Automatico: Bolivia */}
                         <LogoSpan messageTop={t('msgTop.auto.autoB')} flag={'bolivia flag'} />
                         <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$651 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$124.00USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPackName} />
-                        <AutoShip inputPayment={boliviaEa} />
+                        <AutoShip inputPayment={boliviaEa} country={country} />
                         <Footer />
                     </div>
                 )
@@ -108,7 +108,7 @@ const App = () => {
                     <div>
                         <LogoSpan messageTop={t('msgTop.auto.autoCo')} flag={'co flag'} />
                         <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$688 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$131.05USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPackName} />
-                        <AutoShip inputPayment={colombiaEa} />
+                        <AutoShip inputPayment={colombiaEa} country={country} />
                         <Footer />
 
                     </div>)
@@ -116,8 +116,8 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.auto.autoE')} flag={'ecuador flag'} />
-                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 3x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$386 USD'} quantityTag={'x3'}  package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.80USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPackName} />
-                        <AutoShip inputPayment={ecuadorEa} />
+                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 3x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$386 USD'} quantityTag={'x3'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.80USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPackName} />
+                        <AutoShip inputPayment={ecuadorEa} country={country} />
                         <Footer />
 
                     </div>
@@ -127,7 +127,7 @@ const App = () => {
                     <div>
                         <LogoSpan messageTop={t('msgTop.auto.autoCr')} flag={'cr flag'} />
                         <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$672 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.00USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPackName} />
-                        <AutoShip inputPayment={costaricaEa} />
+                        <AutoShip inputPayment={costaricaEa} country={country} />
                         <Footer />
 
                     </div>
@@ -139,9 +139,9 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.register.regB')} flag={'bolivia flag'} />
-                        <StarterKit kitEcuador={false}/>
+                        <StarterKit kitEcuador={false} />
                         <Package packageType={t('pack.titleReg')} packageName={'Quickstart B.A.R. 6x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$700USD'} quantityTag={'x5+1'} package2Name={'TP start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$159.00USD'} quantity2Tag={'x1'} selectPackage={setPackName} isAutoship={false} />
-                        <SignupForm cedula={t('govId.cedula')} inputPayment={boliviaSign} />
+                        <SignupForm cedula={t('govId.cedula')} country={country} inputPayment={boliviaSign} />
                         <Footer />
                     </div>
                 )
@@ -149,9 +149,9 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.register.regCo')} flag={'co flag'} />
-                        <StarterKit kitEcuador={false}/>
+                        <StarterKit kitEcuador={false} />
                         <Package packageType={t('pack.titleReg')} packageName={'Quickstart B.A.R. 6x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$750USD'} quantityTag={'x5+1'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$166.05USD'} quantity2Tag={'x1'} selectPackage={setPackName} isAutoship={false} />
-                        <SignupForm cedula={t('govId.cedulaNIT')} inputPayment={colombiaSign} />
+                        <SignupForm cedula={t('govId.cedulaNIT')} country={country} inputPayment={colombiaSign} />
                         <Footer />
                     </div>
                 )
@@ -161,7 +161,7 @@ const App = () => {
                         <LogoSpan messageTop={t('msgTop.register.regE')} flag={'ecuador flag'} />
                         <StarterKit kitEcuador={true} />
                         <Package packageType={t('pack.titleReg')} packageName={'Pedido de prueba B.A.R. 3x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$396USD'} quantityTag={'x3'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$163.80USD'} quantity2Tag={'x1'} selectPackage={setPackName} isAutoship={false} />
-                        <SignupForm cedula={t('govId.cedula')} inputPayment={ecuadorSign} />
+                        <SignupForm cedula={t('govId.cedula')} country={country} inputPayment={ecuadorSign} />
                         <Footer />
                     </div>
                 )
@@ -171,7 +171,7 @@ const App = () => {
                         <LogoSpan messageTop={t('msgTop.register.regCr')} flag={'cr flag'} />
                         <StarterKit kitEcuador={false} />
                         <Package packageType={t('pack.titleReg')} packageName={'Quickstart B.A.R. 6x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$740USD'} quantityTag={'x5+1'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$163.00USD'} quantity2Tag={'x1'} selectPackage={setPackName} isAutoship={false} />
-                        <SignupForm cedula={t('govId.cedula')} inputPayment={costaricaSign} />
+                        <SignupForm cedula={t('govId.cedula')} country={country} inputPayment={costaricaSign} />
                         <Footer />
                     </div>
                 )
@@ -201,6 +201,8 @@ function Child() {
     // the dynamic pieces of the URL.
 
     let { id } = useParams();
+    const [country, setCountry] = useState("");
+    const [amount, setAmount] = useState("")
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
@@ -219,6 +221,8 @@ function Child() {
 
     useEffect(() => {
         getUser(id).then(response => {
+            setCountry(response.data.country);
+            setAmount(response.data.amount);
             setFirstName(response.data.firstName);
             setLastName(response.data.lastName);
             setEmail(response.data.email);
@@ -268,6 +272,8 @@ function Child() {
                 <h3>You will receive an email shortly with your order's information, and you may now close this page.</h3>
                 <br></br>
                 <form className="ui form" id="formSpree" onSubmit={handleOnSubmit}>
+                    <input type="hidden" name="amount" value={amount} />
+                    <input type="hidden" name="country" value={country} />
                     <input type="hidden" name="first-name" value={firstName} />
                     <input type="hidden" name="last-name" value={lastName} />
                     <input type="hidden" name="email" value={email} />

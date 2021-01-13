@@ -25,7 +25,8 @@ const SignupForm = (props) => {
     // const [orderId, setOrderId] = useState("");
     const [token, setToken] = useState("");
 
-    let ammount = props.inputPayment;
+    let amount = props.inputPayment;
+    let country = props.country;
 
 
     //handle user input and send as props up, use on form submit
@@ -53,7 +54,7 @@ const SignupForm = (props) => {
         // setOrderId(rand());
 
         // getToken(ammount, rand())
-                getToken(ammount, orderId)
+                getToken(amount, orderId)
                 .then(response => {
                 setToken(response.data.token);
                 toggleFormAppear();
@@ -62,7 +63,7 @@ const SignupForm = (props) => {
                 console.error(error);
             });
 
-        const form = { firstName, lastName, email, phone, street, zipCode, city, govId, dob, sponsorName, sponsorTP, orderId};
+        const form = { amount, country, firstName, lastName, email, phone, street, zipCode, city, govId, dob, sponsorName, sponsorTP, orderId};
         createUser(form)
         // .then(getUser(orderId));
 

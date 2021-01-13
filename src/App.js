@@ -29,7 +29,7 @@ const App = () => {
     const [country, setCountry] = useState('');
     const [form, setForm] = useState('');
     const [pack, setPack] = useState('');
-    const [packName, setPackName] = useState('');
+    const [packName, setPackName] = useState('managerPack');
     const [price, setPrice] = useState('');
     const { t, i18n } = useTranslation('common');
 
@@ -55,21 +55,21 @@ const App = () => {
     //     )
     // }
 
-    let boliviaSign = (packName === "managerPack") ? 124 : 728;
-    let colombiaSign = (packName === "managerPack") ? 194.05 : 778;
-    let costaricaSign = (packName === "managerPack") ? 191 : 768;
-    let ecuadorSign = (packName === "managerPack") ? 191.80 : 424;
+    let boliviaSign = (packName === "managerPack") ?  728 : 124 ;
+    let colombiaSign = (packName === "managerPack") ?  778 : 194.05 ;
+    let costaricaSign = (packName === "managerPack") ?  768 : 191;
+    let ecuadorSign = (packName === "managerPack") ?  424 : 191.80;
 
-    let ecuadorEa = (packName === "managerPack") ? 156.80 : 414;
-    let boliviaEa = (packName === "managerPack") ? 152 : 679;
-    let colombiaEa = (packName === "managerPack") ? 159.05 : 716;
-    let costaricaEa = (packName === "managerPack") ? 156 : 700;
+    let ecuadorEa = (packName === "managerPack") ? 414 : 156.80 ;
+    let boliviaEa = (packName === "managerPack") ? 679 : 152;
+    let colombiaEa = (packName === "managerPack") ?  716 : 159.05 ;
+    let costaricaEa = (packName === "managerPack") ? 700 : 156 ;
 
 
     const renderContent = () => {
 
         if (country === '') {
-            return (
+            return (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
                 //  show loader on certain state events
                 // <Loader />
                 <div>
@@ -93,11 +93,12 @@ const App = () => {
         }
         else if (form === 'autoship') {
             if (country === 'bolivia') {
+                console.log(boliviaEa);
                 return (
                     <div>
                         {/* messsageTop= Envio Automatico: Bolivia */}
                         <LogoSpan messageTop={t('msgTop.auto.autoB')} flag={'bolivia flag'} />
-                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$651 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$124.00USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPack} />
+                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$651 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$124.00USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPackName} />
                         <AutoShip inputPayment={boliviaEa} />
                         <Footer />
                     </div>
@@ -106,7 +107,7 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.auto.autoCo')} flag={'co flag'} />
-                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$688 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$131.05USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPack} />
+                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$688 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$131.05USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPackName} />
                         <AutoShip inputPayment={colombiaEa} />
                         <Footer />
 
@@ -115,7 +116,7 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.auto.autoE')} flag={'ecuador flag'} />
-                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 3x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$386 USD'} quantityTag={'x3'}  package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.80USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPack} />
+                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 3x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$386 USD'} quantityTag={'x3'}  package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.80USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPackName} />
                         <AutoShip inputPayment={ecuadorEa} />
                         <Footer />
 
@@ -125,7 +126,7 @@ const App = () => {
                 return (
                     <div>
                         <LogoSpan messageTop={t('msgTop.auto.autoCr')} flag={'cr flag'} />
-                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$672 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.00USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPack} />
+                        <Package packageType={t('pack.titleAs')} packageName={"Fitline Optimal set EA* 6x (Basics, Restorate citrus & Activize Oxyplus)"} price={'$672 USD'} quantityTag={'x6'} package2Name={'TP EA 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$128.00USD'} quantity2Tag={'x1'} isAutoship={true} selectPackage={setPackName} />
                         <AutoShip inputPayment={costaricaEa} />
                         <Footer />
 
@@ -139,7 +140,7 @@ const App = () => {
                     <div>
                         <LogoSpan messageTop={t('msgTop.register.regB')} flag={'bolivia flag'} />
                         <StarterKit kitEcuador={false}/>
-                        <Package packageType={t('pack.titleReg')} packageName={'Quickstart B.A.R. 6x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$700USD'} quantityTag={'x5+1'} package2Name={'TP start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$159.00USD'} quantity2Tag={'x1'} selectPackage={setPack} isAutoship={false} />
+                        <Package packageType={t('pack.titleReg')} packageName={'Quickstart B.A.R. 6x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$700USD'} quantityTag={'x5+1'} package2Name={'TP start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$159.00USD'} quantity2Tag={'x1'} selectPackage={setPackName} isAutoship={false} />
                         <SignupForm cedula={t('govId.cedula')} inputPayment={boliviaSign} />
                         <Footer />
                     </div>
@@ -149,7 +150,7 @@ const App = () => {
                     <div>
                         <LogoSpan messageTop={t('msgTop.register.regCo')} flag={'co flag'} />
                         <StarterKit kitEcuador={false}/>
-                        <Package packageType={t('pack.titleReg')} packageName={'Quickstart B.A.R. 6x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$750USD'} quantityTag={'x5+1'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$166.05USD'} quantity2Tag={'x1'} selectPackage={setPack} isAutoship={false} />
+                        <Package packageType={t('pack.titleReg')} packageName={'Quickstart B.A.R. 6x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$750USD'} quantityTag={'x5+1'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$166.05USD'} quantity2Tag={'x1'} selectPackage={setPackName} isAutoship={false} />
                         <SignupForm cedula={t('govId.cedulaNIT')} inputPayment={colombiaSign} />
                         <Footer />
                     </div>
@@ -159,7 +160,7 @@ const App = () => {
                     <div>
                         <LogoSpan messageTop={t('msgTop.register.regE')} flag={'ecuador flag'} />
                         <StarterKit kitEcuador={true} />
-                        <Package packageType={t('pack.titleReg')} packageName={'Pedido de prueba B.A.R. 3x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$396USD'} quantityTag={'x3'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$163.80USD'} quantity2Tag={'x1'} selectPackage={setPack} isAutoship={false} />
+                        <Package packageType={t('pack.titleReg')} packageName={'Pedido de prueba B.A.R. 3x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$396USD'} quantityTag={'x3'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$163.80USD'} quantity2Tag={'x1'} selectPackage={setPackName} isAutoship={false} />
                         <SignupForm cedula={t('govId.cedula')} inputPayment={ecuadorSign} />
                         <Footer />
                     </div>
@@ -169,7 +170,7 @@ const App = () => {
                     <div>
                         <LogoSpan messageTop={t('msgTop.register.regCr')} flag={'cr flag'} />
                         <StarterKit kitEcuador={false} />
-                        <Package packageType={t('pack.titleReg')} packageName={'Quickstart B.A.R. 6x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$740USD'} quantityTag={'x5+1'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$163.00USD'} quantity2Tag={'x1'} selectPackage={setPack} isAutoship={false} />
+                        <Package packageType={t('pack.titleReg')} packageName={'Quickstart B.A.R. 6x (Basics, Restorate citrus & Activize Oxyplus)'} price={'$740USD'} quantityTag={'x5+1'} package2Name={'TP Start 1x (Basics, Restorate citrus & Activize Oxyplus)'} price2={'$163.00USD'} quantity2Tag={'x1'} selectPackage={setPackName} isAutoship={false} />
                         <SignupForm cedula={t('govId.cedula')} inputPayment={costaricaSign} />
                         <Footer />
                     </div>

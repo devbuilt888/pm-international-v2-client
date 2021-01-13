@@ -4,34 +4,32 @@ import { useTranslation } from 'react-i18next';
 const Package = (props) => {
     const { t, i18n } = useTranslation('common');
     const [isAutoship, setAutoship] = useState("");
-    const [isActive, setIsActive] = useState("false");
+    const [isActive, setIsActive] = useState(true);
     const [packageSelected, setPackageSelected] = useState("smallPack");
     let [ecuadorKit, setEcuadorKit] = useState(false);
 
     useEffect(() => {
-        changePackage();
         // setAutoship(props.isAutoship);
         setEcuadorKit(props.ecuadorKit);
-    });
+    }, []);
 
     //Check if the first element is active, 
     const handleToggle = () => {
         // if(!isAutoship){
             setIsActive(!isActive);
+            console.log(isActive);
+            changePackage();
         // }else{return;}
     };
 
     const changePackage = () => {
-        if (!isAutoship) {
+        // if (!isAutoship) {
             if (isActive) {
                 setPackageSelected("managerPack");
             } else {
                 setPackageSelected("smallPack");
             }
             selectPackage(packageSelected);
-        } else {
-            return;
-        }
     }
     const selectPackage = (packageSelected) => {
         props.selectPackage(packageSelected);

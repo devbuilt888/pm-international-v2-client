@@ -33,7 +33,7 @@ const AutoShip = (props) => {
     //     }
     // };
 
-    let ammount;
+    let ammount = props.inputPayment;
     const rand = function () {
         return Math.random().toString(36).substr(2); // remove `0.`
     };
@@ -42,7 +42,6 @@ const AutoShip = (props) => {
 
     const toggleFormAppear = () => {
         setFormSubmitted(!formSubmitted);
-        ammount = props.inputPayment;
     }
 
     const handleOnSubmit = e => {

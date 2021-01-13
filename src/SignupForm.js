@@ -25,13 +25,14 @@ const SignupForm = (props) => {
     // const [orderId, setOrderId] = useState("");
     const [token, setToken] = useState("");
 
+    let ammount = props.inputPayment;
+
 
     //handle user input and send as props up, use on form submit
     const rand = function () {
         return Math.random().toString(36).substr(2); // remove `0.`
     };
 
-    let ammount;
     const orderId = rand();
     // const handleServerResponse = (ok, msg, form) => {
     //     setServerState({
@@ -51,7 +52,6 @@ const SignupForm = (props) => {
         //here I can use getToken after a form submit, which is an axios call to the api endpoint for get token
         // setOrderId(rand());
 
-        ammount = props.inputPayment;
         // getToken(ammount, rand())
                 getToken(ammount, orderId)
                 .then(response => {

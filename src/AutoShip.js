@@ -42,14 +42,13 @@ const AutoShip = (props) => {
 
     const toggleFormAppear = () => {
         setFormSubmitted(!formSubmitted);
+        ammount = props.inputPayment;
     }
 
     const handleOnSubmit = e => {
         e.preventDefault();
         //here I can use getToken after a form submit, which is an axios call to the api endpoint for get token
         // setOrderId(rand());
-
-         ammount = props.inputPayment;
         // getToken(ammount, rand())
         getToken(ammount, orderId)
             .then(response => {

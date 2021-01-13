@@ -55,15 +55,15 @@ const App = () => {
     //     )
     // }
 
-    const boliviaSign = (packName === "managerPack") ? 124 : 728;
-    const colombiaSign = (packName === "managerPack") ? 194.05 : 778;
-    const costaricaSign = (packName === "managerPack") ? 191 : 768;
-    const ecuadorSign = (packName === "managerPack") ? 191.80 : 424;
+    let boliviaSign = (packName === "managerPack") ? 124 : 728;
+    let colombiaSign = (packName === "managerPack") ? 194.05 : 778;
+    let costaricaSign = (packName === "managerPack") ? 191 : 768;
+    let ecuadorSign = (packName === "managerPack") ? 191.80 : 424;
 
-    const ecuadorEa = (packName === "managerPack") ? 156.80 : 414;
-    const boliviaEa = (packName === "managerPack") ? 152 : 679;
-    const colombiaEa = (packName === "managerPack") ? 159.05 : 716;
-    const costaricaEa = (packName === "managerPack") ? 156 : 700;
+    let ecuadorEa = (packName === "managerPack") ? 156.80 : 414;
+    let boliviaEa = (packName === "managerPack") ? 152 : 679;
+    let colombiaEa = (packName === "managerPack") ? 159.05 : 716;
+    let costaricaEa = (packName === "managerPack") ? 156 : 700;
 
 
     const renderContent = () => {

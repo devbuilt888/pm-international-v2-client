@@ -32,6 +32,8 @@ const AutoShip = (props) => {
     //         form.reset();
     //     }
     // };
+
+    let ammount;
     const rand = function () {
         return Math.random().toString(36).substr(2); // remove `0.`
     };
@@ -47,7 +49,7 @@ const AutoShip = (props) => {
         //here I can use getToken after a form submit, which is an axios call to the api endpoint for get token
         // setOrderId(rand());
 
-        const ammount = 0.50;
+         ammount = props.inputPayment;
         // getToken(ammount, rand())
         getToken(ammount, orderId)
             .then(response => {

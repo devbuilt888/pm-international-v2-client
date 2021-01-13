@@ -27,7 +27,7 @@ const StarterKit = (props) => {
                                 <img className="starterkit ui image" alt="bolivia flag" src={kitEcuador ? ecuadorKit : starterkit} />
                             </div>
                             <div className="descriptionProduct">
-                                <h5>{kitEcuador ?  "Activize Oxyplus" : "Starter Kit - Demo bag"}</h5>
+                                <h5>{kitEcuador ?  "Demo Activize Oxyplus" : "Starter Kit - Demo bag"}</h5>
                                 <p>{kitEcuador ? t("startK.ecuadorKit") : t("startK.kit")}</p>
                             </div>
                         </div>

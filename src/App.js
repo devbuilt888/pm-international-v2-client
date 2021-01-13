@@ -55,15 +55,15 @@ const App = () => {
     //     )
     // }
 
-    const boliviaSign = (packName === "managerPack") ? "8be2279b-798b-4f9b-8d83-9bfe2bb67192" : "ab84d345-c8e0-4876-b486-3bc95c5e7644";
-    const colombiaSign = (packName === "managerPack") ? "55cb47b2-4a28-4f84-8e1a-fa2b6128963e" : "37daf370-a46b-4029-8412-628c877bde3e";
-    const costaricaSign = (packName === "managerPack") ? "cd606a8d-4b32-4e04-9844-cfd7ed386e63" : "ab2ca069-a546-42ee-987c-a69c71b224c4";
-    const ecuadorSign = (packName === "managerPack") ? "6a188dc8-24b5-4fd5-bcca-ebbd8a04f899" : "a5755eac-52cc-4b9b-8d5c-0228545ced9f";
+    const boliviaSign = (packName === "managerPack") ? 124 : 728;
+    const colombiaSign = (packName === "managerPack") ? 194.05 : 778;
+    const costaricaSign = (packName === "managerPack") ? 191 : 768;
+    const ecuadorSign = (packName === "managerPack") ? 191.80 : 424;
 
-    const ecuadorEa = "e045dc57-0698-4600-9596-090bab48585e";
-    const boliviaEa = "b5dfaba4-3d78-4285-a204-df4a0367708f";
-    const colombiaEa = "eb60ca2e-90bc-400f-94d9-a55c9eb5d013";
-    const costaricaEa = "b62727b1-7eda-48f9-9260-8180e5da6a29";
+    const ecuadorEa = (packName === "managerPack") ? 156.80 : 414;
+    const boliviaEa = (packName === "managerPack") ? 152 : 679;
+    const colombiaEa = (packName === "managerPack") ? 159.05 : 716;
+    const costaricaEa = (packName === "managerPack") ? 156 : 700;
 
 
     const renderContent = () => {

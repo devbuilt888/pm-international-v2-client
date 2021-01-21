@@ -1,9 +1,46 @@
 import React from 'react';
 import './style.css';
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from 'react';
 
 const LogoSpan = (props) => {
     const { t, i18n } = useTranslation('common');
+    // let [formDisplay, setFormDisplay] = useState(false);
+    const [formUrl, setFormUrl] = useState('');
+    // setUpForm();
+
+    useEffect(() => {
+        setUpForm();
+    }, );
+
+
+
+    const setUpForm = () => {
+        if (props.formDownload) {
+
+            if (props.formDownload === 'eaEcuador') {
+                setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5E89Hycz5CQBOmMx?e=X6LnDC")
+            } else if (props.formDownload === 'eaColombia') {
+                setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5FE0EoNQ8D72x2II?e=pxcHuh");
+            } else if (props.formDownload === 'eaCostarica') {
+                setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5FDZTKYDuN8BVS8w?e=NO4Fb7");
+            } else if (props.formDownload === 'eaBolivia') {
+                setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5FIZZpV03E4UvQtL?e=HhaGnR");
+            } else if (props.formDownload === 'rgEcuador') {
+                setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5E89Hycz5CQBOmMx?e=E9KRcr");
+            } else if (props.formDownload === 'rgBolivia') {
+                setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5Fb7UcNZDh4OubvQ?e=J1OJ2k");
+            } else if (props.formDownload === 'rgCostarica') {
+                setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5FXvhtnTol_j7XQ_?e=8kPB8s");
+            } else if (props.formDownload === 'rgColombia') {
+                setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5FOB7WW6nRG1n_Jh?e=5Y7A2t");
+            } else {
+                console.log(props.formDownload)
+            }
+        }
+    }
+
+
 
     return (
         <div className="ui grid appBar">
@@ -23,15 +60,27 @@ const LogoSpan = (props) => {
             </div>
             <div className="topMessage sixteen wide column">
                 <div className="ui grid">
+                    {/* <div className="one wide column marginBtn iconReload"> */}
+                    {/* </div> */}
                     <div className="three wide column marginBtn">
                         <a href="">
-                            <button className="ui button pmButton">PM-International</button>
+                            <i id="iconReload" className=" icon arrow alternate circle left outline"></i>
+                        </a>
+                        <a href="">
+                            <button className="ui button pmButton">
+                                PM-International</button>
                         </a>
                     </div>
                     <div className="five wide column marginMsgTop">
                         <h5>{props.messageTop}</h5><i className={props.flag}></i>
 
 
+                    </div>
+                    <div className={props.formDisplay ? "four wide column marginMsgTop" : "disappearSubmit"}>
+                        <h4>{t("msgTop.formDownloadMessage")} </h4>
+                        <a href={formUrl} target="_blank">
+                            <button className="ui button">{t("msgTop.formDownloadButton")}</button>
+                        </a>
                     </div>
                 </div>
                 <div className="whiteSpace sixteen wide column">

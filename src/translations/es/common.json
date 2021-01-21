@@ -2,6 +2,8 @@
     "msgTop": {
         "title": "Para empezar haz click en tu pais:",
         "option": "Ahora selecciona una opcion:",
+        "formDownloadMessage": "Descargar formulario manual aqui:",
+        "formDownloadButton":"Formulario",
         "auto": {
             "autoB": "Envio Automatico: Bolivia",
             "autoE": "Envio Automatico: Ecuador",
@@ -31,7 +33,8 @@
     "countryOptions":{
         "optionsTitle":"Haz click en una de las opciones:",
         "optionAs": "Ya estoy registrado/a, quiero hacer un pedido de autoenvio.",
-        "optionReg": "Quiero registrarme y hacer mi primer pedido."
+        "optionReg": "Quiero registrarme y hacer mi primer pedido.",
+        "optionSh": "Quiero comprar como cliente sin registrarme"
     },
     "signUpForm": {
         "title": "Formulario de registro",

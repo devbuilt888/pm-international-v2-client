@@ -2,6 +2,8 @@
     "msgTop": {
         "title": "To start, click on your country's flag:",
         "option": "Now select an option:",
+        "formDownloadMessage": "Download form to fill out manually here:",
+        "formDownloadButton":"Form",
         "auto": {
             "autoB": "Automatic Shipment: Bolivia",
             "autoE": "Automatic Shipment: Ecuador",
@@ -30,7 +32,8 @@
     "countryOptions": {
         "optionsTitle": "Click on one of the options:",
         "optionAs": "I'm already registered and would like to place an automatic shipment order.",
-        "optionReg": "I would like to register and make my first order."
+        "optionReg": "I would like to register and make my first order.",
+        "optionSh": "I want to buy as a customer without signing up"
     },
     "signUpForm": {
         "title": "Registration form",

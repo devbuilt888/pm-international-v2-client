@@ -26,9 +26,17 @@ const OrderOptions = (props) => {
         sendFormUp('autoship');
     }
 
+    // const setShop = () => {
+    //     setForm('shop');
+    //     sendFormUp('shop')
+    // }
+
     const sendFormUp = (form) => {
         props.setForm(form);
     }
+
+    // make shop be handled by app js and return a shop form, along with logic for price for authorize net, also logic for app js return other components for shop with products
+    //Add pdf to be downloaded in all pages
     return (
         <div className="ui grid orderOptions backgroundStyle">
             <div className="greyBox option sixteen wide column">
@@ -39,6 +47,9 @@ const OrderOptions = (props) => {
                 <div className="optionButton borderSolid" onClick={setSignUp}>
                     {t("countryOptions.optionReg")}
                 </div>
+                {/* <div className="optionButton borderSolid" onClick={setShop}>
+                    {t("countryOptions.optionSh")}
+                </div> */}
             </div>
         </div>
     )

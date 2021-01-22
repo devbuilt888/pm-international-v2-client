@@ -4,6 +4,7 @@
         "option": "Ahora selecciona una opcion:",
         "formDownloadMessage": "Descargar formulario manual aqui:",
         "formDownloadButton":"Formulario",
+        "formReqSuccess":"Envie el formulario relleno a: pmi-fpo@pm-international.com",
         "auto": {
             "autoB": "Envio Automatico: Bolivia",
             "autoE": "Envio Automatico: Ecuador",

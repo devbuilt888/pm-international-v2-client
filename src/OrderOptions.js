@@ -26,10 +26,10 @@ const OrderOptions = (props) => {
         sendFormUp('autoship');
     }
 
-    // const setShop = () => {
-    //     setForm('shop');
-    //     sendFormUp('shop')
-    // }
+    const setShop = () => {
+        setForm('shop');
+        sendFormUp('shop')
+    }
 
     const sendFormUp = (form) => {
         props.setForm(form);
@@ -48,7 +48,7 @@ const OrderOptions = (props) => {
                     {t("countryOptions.optionReg")}
                 </div>
                 {/* <div className="optionButton borderSolid" onClick={setShop}>
-                    {t("countryOptions.optionSh")}
+                    {t("countryOptions.optionReg")}
                 </div> */}
             </div>
         </div>

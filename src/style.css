@@ -297,3 +297,8 @@ input {
     color:white;
     font-size:2rem;
 }
+
+.successText{
+    color:green;
+    font-size:2rem;
+}

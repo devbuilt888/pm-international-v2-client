@@ -7,14 +7,18 @@ const LogoSpan = (props) => {
     const { t, i18n } = useTranslation('common');
     // let [formDisplay, setFormDisplay] = useState(false);
     const [formUrl, setFormUrl] = useState('');
+    const [formRequested, setFormRequested] = useState(false);
     // setUpForm();
 
     useEffect(() => {
         setUpForm();
-    }, );
+    });
 
+    const changeForm = () =>{
+        setFormRequested(!formRequested);
+    }
 
-
+    
     const setUpForm = () => {
         if (props.formDownload) {
 
@@ -38,9 +42,7 @@ const LogoSpan = (props) => {
                 console.log(props.formDownload)
             }
         }
-    }
-
-
+    };
 
     return (
         <div className="ui grid appBar">
@@ -78,16 +80,20 @@ const LogoSpan = (props) => {
                     </div>
                     <div className={props.formDisplay ? "four wide column marginMsgTop" : "disappearSubmit"}>
                         <h4>{t("msgTop.formDownloadMessage")} </h4>
-                        <a href={formUrl} target="_blank">
+                        <a href={formUrl} target="_blank" onClick={changeForm}>
                             <button className="ui button">{t("msgTop.formDownloadButton")}</button>
                         </a>
                     </div>
                 </div>
-                <div className="whiteSpace sixteen wide column">
+                <div className={formRequested ? "whiteSpace sixteen wide column" : "disappearSubmit"}>
+                <div className="ui blue segment">
+                    <div className="ui green segment">
+                        <p className="successText">{t("msgTop.formReqSuccess")}</p>
+                    </div>
                 </div>
+            </div>
                 {/* this in the future will be props dependent */}
             </div>
-
         </div>
 
     )

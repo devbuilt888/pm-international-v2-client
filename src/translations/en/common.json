@@ -4,6 +4,7 @@
         "option": "Now select an option:",
         "formDownloadMessage": "Download form to fill out manually here:",
         "formDownloadButton":"Form",
+        "formReqSuccess":"Please send the form to: pmi-fpo@pm-international.com",
         "auto": {
             "autoB": "Automatic Shipment: Bolivia",
             "autoE": "Automatic Shipment: Ecuador",

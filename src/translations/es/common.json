@@ -6,10 +6,10 @@
         "formDownloadButton":"Formulario",
         "formReqSuccess":"Envie el formulario relleno a: pmi-fpo@pm-international.com",
         "auto": {
-            "autoB": "Envio Automatico: Bolivia",
-            "autoE": "Envio Automatico: Ecuador",
-            "autoCr": "Envio Automatico: Costa Rica",
-            "autoCo": "Envio Automatico: Colombia"
+            "autoB": "Pedido de producto: Bolivia",
+            "autoE": "Pedido de producto: Ecuador",
+            "autoCr": "Pedido de producto: Costa Rica",
+            "autoCo": "Pedido de producto: Colombia"
         },
         "register": {
             "regB": "Registro: Bolivia",
@@ -20,7 +20,7 @@
         }
     },
     "pack": {
-        "titleAs": "Compra tu autoenvio aqui:",
+        "titleAs": "Compra tus productos favoritos aqui:",
         "titleReg": "Compra tu paquete de inicio y registrate:",
         "managermsg": "CALIFICACION INMEDIATA COMO MANAGER",
         "price": "Precio: ",
@@ -33,9 +33,8 @@
     },
     "countryOptions":{
         "optionsTitle":"Haz click en una de las opciones:",
-        "optionAs": "Ya estoy registrado/a, quiero hacer un pedido de autoenvio.",
-        "optionReg": "Quiero registrarme y hacer mi primer pedido.",
-        "optionSh": "Quiero comprar como cliente sin registrarme"
+        "optionAs": "Ya estoy registrado/a, quiero hacer un pedido.",
+        "optionReg": "Quiero registrarme y hacer mi primer pedido."
     },
     "signUpForm": {
         "title": "Formulario de registro",
@@ -67,8 +66,8 @@
         "ecuadorKit": "( Activize Oxyplus )"
     },
     "automaticShip":{
-        "title":"Orden de autoenvio", 
-        "confirmAuto":"Confirmo que quiero activar mi autoenvio.",
+        "title":"Pedido de producto:", 
+        "confirmAuto":"Confirmo que quiero hacer esta orden.",
         "teampartnerNumber": "Numero de TeamPartner"
     },
     "longMessages": {

@@ -35,7 +35,7 @@ const LogoSpan = (props) => {
             } else if (props.formDownload === 'rgBolivia') {
                 setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5Fb7UcNZDh4OubvQ?e=J1OJ2k");
             } else if (props.formDownload === 'rgCostarica') {
-                setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5FXvhtnTol_j7XQ_?e=8kPB8s");
+                setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5FOB7WW6nRG1n_Jh?e=e3sIyw");
             } else if (props.formDownload === 'rgColombia') {
                 setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5FXvhtnTol_j7XQ_");
             } else {

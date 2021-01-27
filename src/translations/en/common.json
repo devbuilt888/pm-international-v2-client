@@ -6,10 +6,10 @@
         "formDownloadButton":"Form",
         "formReqSuccess":"Please send the form to: pmi-fpo@pm-international.com",
         "auto": {
-            "autoB": "Automatic Shipment: Bolivia",
-            "autoE": "Automatic Shipment: Ecuador",
-            "autoCr": "Automatic Shipment: Costa Rica",
-            "autoCo": "Automatic Shipment: Colombia"
+            "autoB": "Product order: Bolivia",
+            "autoE": "Product order: Ecuador",
+            "autoCr": "Product order: Costa Rica",
+            "autoCo": "Product order: Colombia"
         },
         "register": {
             "regB": "Registration: Bolivia",
@@ -20,7 +20,7 @@
         }
     },
     "pack": {
-        "titleAs": "Buy you automatic shipment here:",
+        "titleAs": "Buy your favorite products here:",
         "titleReg": "Buy you starter package and register:", 
         "managermsg": "QUALIFY IMMEDIATELY AS MANAGER",
         "price": "Price: ",
@@ -32,13 +32,12 @@
     },
     "countryOptions": {
         "optionsTitle": "Click on one of the options:",
-        "optionAs": "I'm already registered and would like to place an automatic shipment order.",
-        "optionReg": "I would like to register and make my first order.",
-        "optionSh": "I want to buy as a customer without signing up"
+        "optionAs": "I'm already registered and would like to place an order.",
+        "optionReg": "I would like to register and make my first order."
     },
     "signUpForm": {
         "title": "Registration form",
-        "fillInfo": "Pleas fill with your information:",
+        "fillInfo": "Please fill with your information:",
         "typeA": "Mr",
         "typeB": "Mrs",
         "typeC": "Business",
@@ -66,8 +65,8 @@
         "ecuadorKit": "(Activize Oxyplus)"
     },
     "automaticShip":{
-        "title":"Automatic Shipment Order", 
-        "confirmAuto":"I confirm I want to activate my automatic shipment.",
+        "title":"Product order:", 
+        "confirmAuto":"I confirm I want to place an order.",
         "teampartnerNumber": "TeamPartner Number"
     }, 
     "longMessages": {

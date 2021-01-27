@@ -37,7 +37,7 @@ const LogoSpan = (props) => {
             } else if (props.formDownload === 'rgCostarica') {
                 setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5FXvhtnTol_j7XQ_?e=8kPB8s");
             } else if (props.formDownload === 'rgColombia') {
-                setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5FOB7WW6nRG1n_Jh?e=5Y7A2t");
+                setFormUrl("https://1drv.ms/b/s!AgWaYTfHecEu5FXvhtnTol_j7XQ_");
             } else {
                 console.log(props.formDownload)
             }
@@ -88,7 +88,7 @@ const LogoSpan = (props) => {
                 <div className={formRequested ? "whiteSpace sixteen wide column" : "disappearSubmit"}>
                 <div className="ui blue segment">
                     <div className="ui green segment">
-                        <p className="successText">{t("msgTop.formReqSuccess")}</p>
+                        <p className="successText"><i className="icon envelope open"></i>{t("msgTop.formReqSuccess")}</p>
                     </div>
                 </div>
             </div>

@@ -29,7 +29,6 @@ const CountryFlags = (props) => {
         setFlagSelected('ecuador')
         setCountry('ecuador');
         giveBorderImg('.ecuador');
-
     }
     const setCountry = (country) => {
         props.setCountry(country)

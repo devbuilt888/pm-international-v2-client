@@ -55,7 +55,7 @@ const App = () => {
     //     )
     // }
 
-    let boliviaSign = (packName === "managerPack") ? 728 : 124;
+    let boliviaSign = (packName === "managerPack") ? 728 : 187;
     let colombiaSign = (packName === "managerPack") ? 778 : 194.05;
     let costaricaSign = (packName === "managerPack") ? 768 : 191;
     let ecuadorSign = (packName === "managerPack") ? 424 : 191.80;

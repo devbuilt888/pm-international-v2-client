@@ -14,7 +14,7 @@ const Footer = () => {
                 <h3>PM-International USA</h3>
                 <p>7245 16th St East
         Sarasota, FL 34243 / USA</p>
-               <h4> Email: pmi-fpo@pm-international.com</h4>
+               <h4> Email: pmi-fpo-americas@pm-international.com</h4>
             </div>
         } else {
             return <div></div>
